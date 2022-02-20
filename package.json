@@ -1,0 +1,34 @@
+{
+  "name": "whatsfelix",
+  "version": "3.0.0",
+  "description": "Custom Qr Scanner",
+  "depecrated": false,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "termux-whatsapp-bot",
+    "whatsapp-bot",
+    "whatsapp",
+    "js-whatsapp"
+  ],
+  "homepage": "https://github.com/SafwanGanz/WhatsFelix_replit.git",
+  "author": {
+    "name": "SafwanGanz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SafwanGanz/WhatsFelix_replit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SafwanGanz/issues"
+  },
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@adiwajshing/baileys": "^3.5.2",
+    "fs": "^0.0.1",
+    "chalk": "^5.0.0"
+  }
+}
