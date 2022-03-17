@@ -17,7 +17,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please wait.')}`);
     conn.on('open', async () => {
         console.log(
             chalk.green.bold('Felix QR Code: '), 
-            'FELIX;;;' + Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64')
+            Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64')
         );
         await conn.sendMessage(conn.user.jid, 'FELIX;;;' + Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64'), MessageType.text );
         console.log(            
