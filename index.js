@@ -20,6 +20,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please wait.')}`);
             Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64')
         );
         await conn.sendMessage(conn.user.jid, Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString('base64'), MessageType.text );
+        await conn.sendMessage(conn.user.jid, `Dont share with anyone please keep it personal..\nBy SafwanGanz`, MessageType.text );
         console.log(            
             chalk.green.bold('IF YOU CANNOT COPY THE MESSAGE, PLEASE CHECK WHATSAPP. QR CODE SENT TO YOUR OWN NUMBER!')
         );
